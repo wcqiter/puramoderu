@@ -5,7 +5,7 @@ cover:
   src: "https://r2-puramoderu.dennisiter.cc/2026-11-12/__1_f_IMG_4946.jpg"
   alt: "Plafia 智乃"
 xUrl: "https://x.com/dennisiter/status/2120860124915118333"
-hpoiUrl: "https://www.hpoi.net/..."
+hpoiUrl: "https://www.hpoi.net/album/415845"
 
 parts:
   - location: "/"
