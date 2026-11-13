@@ -9,6 +9,61 @@
       "type": "string",
       "format": "date-time"
     },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "lang": {
+      "default": "zh",
+      "type": "string",
+      "enum": [
+        "zh",
+        "en"
+      ]
+    },
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "pinned": {
+      "default": false,
+      "type": "boolean"
+    },
+    "toc": {
+      "default": false,
+      "type": "boolean"
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "slug": {
+      "type": "string"
+    },
+    "series": {
+      "type": "string"
+    },
+    "seriesOrder": {
+      "type": "number"
+    },
+    "translationKey": {
+      "type": "string"
+    },
+    "ogImage": {
+      "type": "string"
+    },
     "cover": {
       "type": "object",
       "properties": {
@@ -23,6 +78,14 @@
         "src",
         "alt"
       ]
+    },
+    "xUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "hpoiUrl": {
+      "type": "string",
+      "format": "uri"
     },
     "parts": {
       "default": [],
@@ -73,6 +136,9 @@
           "code": {
             "type": "string"
           },
+          "name": {
+            "type": "string"
+          },
           "base": {
             "type": "string"
           },
@@ -92,52 +158,6 @@
           "code"
         ]
       }
-    },
-    "lang": {
-      "default": "zh",
-      "type": "string",
-      "enum": [
-        "zh",
-        "en"
-      ]
-    },
-    "draft": {
-      "default": false,
-      "type": "boolean"
-    },
-    "pinned": {
-      "default": false,
-      "type": "boolean"
-    },
-    "tags": {
-      "default": [],
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "description": {
-      "type": "string"
-    },
-    "excerpt": {
-      "type": "string"
-    },
-    "series": {
-      "type": "string"
-    },
-    "seriesOrder": {
-      "type": "number"
-    },
-    "translationKey": {
-      "type": "string"
-    },
-    "xUrl": {
-      "type": "string",
-      "format": "uri"
-    },
-    "hpoiUrl": {
-      "type": "string",
-      "format": "uri"
     },
     "$schema": {
       "type": "string"

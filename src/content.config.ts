@@ -5,7 +5,6 @@ import { z } from 'astro/zod';
 const models = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/models' }),
   schema: z.object({
-    // 主題依賴的基礎欄位（大多可選，避免舊文章報錯）
     title: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
@@ -28,8 +27,8 @@ const models = defineCollection({
     }).optional(),
 
     // 外部連結
-    xUrl: z.string().url().optional(),
-    hpoiUrl: z.string().url().optional(),
+    xUrl: z.url().optional(),
+    hpoiUrl: z.url().optional(),
 
     // 你的結構化欄位
     parts: z.array(z.object({
@@ -56,8 +55,10 @@ const friends = defineCollection({
   loader: glob({ pattern: '**/*.{md,json,yaml,yml}', base: './src/content/friends' }),
   schema: z.object({
     name: z.string(),
-    href: z.string().url(),
+    href: z.url(),
     avatar: z.string().optional(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).default([]),
   }),
 });
 

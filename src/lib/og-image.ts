@@ -71,7 +71,7 @@ function renderTags(tags: string[]) {
 
 export function renderPostOgImage(post: BlogPost) {
   const titleLines = wrapText(post.data.title, post.data.lang === "zh" ? 18 : 28, 2);
-  const summaryLines = wrapText(getPostSummary(post), post.data.lang === "zh" ? 34 : 58, 2);
+  const summaryLines = wrapText(getPostSummary(post) ?? "", post.data.lang === "zh" ? 34 : 58, 2);
   const date = formatDate(post.data.pubDate, post.data.lang);
   const category = post.data.category;
   const cover = post.data.cover ? absoluteUrl(post.data.cover.src) : undefined;
@@ -110,7 +110,7 @@ export function renderPostOgImage(post: BlogPost) {
   <path d="M954 134 L1017 158 L1044 210 L1030 146 Z" fill="#b7a8ff" opacity="0.45" />
   <text x="88" y="83" class="brand">${escapeXml(themeConfig.name)}</text>
   <rect x="70" y="112" width="1060" height="490" rx="46" fill="url(#card)" stroke="rgba(255,255,255,0.82)" stroke-width="3" filter="url(#shadow)" />
-  <text x="132" y="185" class="eyebrow">${escapeXml(date)} · ${escapeXml(category)}</text>
+  <text x="132" y="185" class="eyebrow">${escapeXml(date)} · ${escapeXml(category ?? "")}</text>
   ${renderTextLines(titleLines, { x: 132, y: 286, lineHeight: 84, className: "title" })}
   <line x1="132" y1="438" x2="642" y2="438" stroke="#8b8cf6" stroke-opacity="0.36" stroke-width="2" />
   ${renderTextLines(summaryLines, { x: 132, y: 478, lineHeight: 38, className: "summary" })}
