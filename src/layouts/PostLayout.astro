@@ -578,12 +578,11 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
     color: var(--primary);
     font-weight: 600;
   }
-
-  /* 覆盖画廊图片的填充方式，避免直向图被裁剪 */
-  :global(.article-content .gallery-item .image-block-media) {
-    aspect-ratio: auto;
-    object-fit: contain;
-    height: auto;
-    max-height: 80vh;
-  }
+</style>
+<style is:global>
+.article-content .gallery-item .image-block-media {
+  object-fit: contain;
+  aspect-ratio: auto;
+  background: var(--surface);
+}
 </style>
