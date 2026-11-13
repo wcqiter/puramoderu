@@ -35,7 +35,6 @@ const targetLocale = locale === "zh" ? "en" : "zh";
 const allPosts = await getPublishedPosts();
 const localePosts = await getPublishedPosts(locale);
 const translatedPost = getTranslatedPost(post, allPosts, targetLocale);
-const alternatePath = translatedPost ? getPostHref(translatedPost) : undefined;
 const alternates = getPostAlternates(post, allPosts);
 const { previousPost, nextPost } = getAdjacentPosts(localePosts, post);
 const seriesPosts = post.data.series ? getSeriesPosts(localePosts, post.data.series) : [];
@@ -45,7 +44,6 @@ const { Content, headings } = await render(post);
 <PostLayout
   post={post}
   locale={locale}
-  alternatePath={alternatePath}
   alternates={alternates}
   previousPost={previousPost}
   nextPost={nextPost}
