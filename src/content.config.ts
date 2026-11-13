@@ -34,7 +34,7 @@ const models = defineCollection({
     parts: z.array(z.object({
       location: z.string(),
       source: z.string(),
-      type: z.enum(['原裝', '殺肉', '第三方改件', '膠板/補土自制', '3D打印', '其他']),
+      type: z.enum(['原裝', 'GK', '殺肉', '第三方改件', '膠板/補土自制', '3D打印', '其他']),
       note: z.string().optional(),
     })).default([]),
 

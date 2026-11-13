@@ -269,6 +269,56 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
       enhanceArticleContent();
     }
   });
+
+  function setupGalleryLightbox() {
+    let dialog = document.querySelector("[data-gallery-lightbox]");
+    if (!dialog) {
+      dialog = document.createElement("dialog");
+      dialog.setAttribute("data-gallery-lightbox", "true");
+      dialog.className = "gallery-lightbox";
+      dialog.innerHTML = '<img alt="" />';
+      document.body.appendChild(dialog);
+      dialog.addEventListener("click", (e) => {
+        if (e.target === dialog) dialog.close();
+      });
+    }
+
+    // 用 dialog 上的标记，避开 body 上残留的旧标记
+    if (dialog.dataset.lightboxBound === "true") return;
+    dialog.dataset.lightboxBound = "true";
+
+    const lightboxImg = dialog.querySelector("img");
+    let startX = 0, startY = 0, startT = 0;
+
+    document.addEventListener("pointerdown", (e) => {
+      if (!(e.target instanceof Element)) return;
+      if (!e.target.closest(".article-content")) return;
+      startX = e.clientX;
+      startY = e.clientY;
+      startT = Date.now();
+    }, true);
+
+    document.addEventListener("pointerup", (e) => {
+      const dx = Math.abs(e.clientX - startX);
+      const dy = Math.abs(e.clientY - startY);
+      const dt = Date.now() - startT;
+      // 移动超过 10px 或按住超过 500ms，视为拖拽，不触发
+      if (dx > 10 || dy > 10 || dt > 500) return;
+
+      // 用坐标反查松开位置的元素，不受 setPointerCapture 影响
+      const target = document.elementFromPoint(e.clientX, e.clientY);
+      if (!target) return;
+      const img = target.closest("img.image-block-media");
+      if (!img) return;
+      if (img.closest("[data-gallery-lightbox]")) return;
+
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt || "";
+      dialog.showModal();
+    }, true);
+  }
+
+  setupGalleryLightbox();
   </script>
 </BaseLayout>
 
@@ -578,11 +628,4 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
     color: var(--primary);
     font-weight: 600;
   }
-</style>
-<style is:global>
-.article-content .gallery-item .image-block-media {
-  object-fit: contain;
-  aspect-ratio: auto;
-  background: var(--surface);
-}
 </style>

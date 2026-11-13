@@ -1530,6 +1530,11 @@ html[data-locale="en"] [data-lang]:not([data-lang="en"]) {
   padding: 0.6rem 0.75rem;
 }
 
+.article-content .gallery-item .image-block-media {
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+}
+
 @media (max-width: 760px) {
   :root {
     --container: calc(100vw - 22px);
@@ -1556,4 +1561,32 @@ html[data-locale="en"] [data-lang]:not([data-lang="en"]) {
       radial-gradient(circle at 8% 8%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 34%),
       linear-gradient(135deg, var(--bg), var(--bg-soft));
   }
+}
+/* 画廊灯箱 */
+.gallery-lightbox {
+  max-width: 96vw;
+  max-height: 96vh;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+.gallery-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.gallery-lightbox img {
+  display: block;
+  max-width: 96vw;
+  max-height: 96vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md, 12px);
+  cursor: zoom-out;
+}
+
+.gallery-lightbox img:hover {
+  opacity: 0.96;
 }
