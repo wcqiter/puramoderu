@@ -38,6 +38,24 @@ const socialIconAliases: Record<string, string> = {
   hpoi: "hpoi"
 };
 
+const localized = {
+  zh: {
+    name: themeConfig.author.name,
+    bio: themeConfig.author.bio,
+    listening: themeConfig.now.listening,
+    reading: themeConfig.now.reading,
+    working: themeConfig.now.working,
+  },
+  en: {
+    name: "ITer",
+    title: "Plastic model enthusiast",
+    bio: "Programmer, model hobbyist, 3D printing enthusiast, miHoYo player",
+    listening: "miHoYo games [Genshin Impact, Honkai: Star Rail, Zenless Zone Zero, Honkai Impact 3rd], Girls' Frontline 2: Exilium, Arknights: Endfield, Azur Lane",
+    reading: "Web full-stack, cloud, architecture, cybersecurity, programming languages",
+    working: themeConfig.now.working,
+  },
+}[locale];
+
 function getSocialIcon(link: { label: string; icon?: string }) {
   const key = (link.icon ?? link.label).trim().toLowerCase();
   return socialIconAliases[key] ?? key.replace(/\s+/g, "-");
@@ -47,9 +65,8 @@ function getSocialIcon(link: { label: string; icon?: string }) {
 <aside class="sidebar">
   <section class="profile glass">
     <img src={withBase(themeConfig.author.avatar)} alt="" width="92" height="92" />
-    <h2>{themeConfig.author.name}</h2>
-    <p class="title">{themeConfig.author.title}</p>
-    <p>{themeConfig.author.bio}</p>
+    <h2>{localized.name}</h2>
+    <p>{localized.bio}</p>
     <div class="links">
       {themeConfig.author.links.map((link) => {
         const icon = getSocialIcon(link);
@@ -67,11 +84,11 @@ function getSocialIcon(link: { label: string; icon?: string }) {
     <dl>
       <div>
         <dt>{t.sidebar.listening}</dt>
-        <dd>{themeConfig.now.listening}</dd>
+        <dd>{localized.listening}</dd>
       </div>
       <div>
         <dt>{t.sidebar.reading}</dt>
-        <dd>{themeConfig.now.reading}</dd>
+        <dd>{localized.reading}</dd>
       </div>
       <div>
         <dt>{t.sidebar.working}</dt>

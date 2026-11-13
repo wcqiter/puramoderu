@@ -3,7 +3,7 @@ import type { SoraPaperUserConfig } from "./src/config/types";
 const config = {
   site: {
     name: "Puramoderu",
-    description: "一個機娘模型愛好者的記錄日誌",
+    description: "一個模型愛好者的記錄日誌",
     url: "https://puramoderu.dennisiter.cc",
     base: "/",
     ogImage: "",
@@ -24,8 +24,8 @@ const config = {
   },
   now: {
     listening: "米哈遊遊戲[原神、崩壞：星穹鐵道、絕區零、崩壞3]、少女前線2：追放、明日方舟：終末地、碧藍航線",
-    reading: "網頁全端、雲端、架構",
-    working: "异世界旅行手帐03 新手铁匠 海莉·史密斯"
+    reading: "網頁全端、雲端、架構、網絡安全、程式語言",
+    working: "異世界旅行手帳 03 新人鍛冶師 ヘーリー・スミス "
   },
   featureFlags: {
     travel: false
@@ -54,7 +54,7 @@ const config = {
     zh: {
       nav: {
         home: "首頁",
-        archive: "製作記錄",
+        archive: "所有文章",
         tags: "主題",
         series: "系列",
         about: "關於",
@@ -63,7 +63,7 @@ const config = {
       },
       hero: {
         eyebrow: "歡迎來到我的日誌",
-        title: "一個機娘模型愛好者的記錄日誌",
+        title: "一個模型愛好者的記錄日誌",
         description: "享受DIY的樂趣",
         chips: []
       },

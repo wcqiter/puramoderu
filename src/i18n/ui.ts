@@ -7,16 +7,16 @@ export const defaultUi = {
   zh: {
     nav: {
      home: "首頁",
-      archive: "製作記錄",
+      archive: "所有文章",
       tags: "主題",
       series: "系列",
       about: "關於",
-      friends: "友情鏈接",
-      travel: "遊記"
+      friends: "",
+      travel: ""
     },
     hero: {
       eyebrow: "歡迎來到我的日誌",
-      title: "一個機娘模型愛好者的記錄日誌",
+      title: "一個模型愛好者的記錄日誌",
       description: "享受DIY的樂趣",
       chips: []
     },
@@ -64,21 +64,21 @@ export const defaultUi = {
     },
    pages: {
     archiveTitle: "以年份瀏覽所有文章",
-    archiveDescription: "已發布的文章。",
-    tagsTitle: "按主題找筆記",
-    tagsDescription: "柔和的內容索引。",
-    taggedDescription: "這個標籤下收錄的文章。",
-    seriesTitle: "按系列連續閱讀",
-    seriesDescription: "有順序地瀏覽相互關聯的文章。",
+    archiveDescription: "",
+    tagsTitle: "按主題尋找",
+    tagsDescription: "",
+    taggedDescription: "",
+    seriesTitle: "按系列尋找",
+    seriesDescription: "",
     seriesPosts: "篇文章",
     seriesEmpty: "這個語言下還沒有系列文章。",
     aboutTitle: "關於",
-    friendsTitle: "網路花園裡的鄰居",
-    friendsDescription: "一些值得訪問的連結。",
-    travelTitle: "遊記",
-    travelDescription: "未來會在這裡記錄旅行路線、城市印象和地圖足跡。",
-    travelEmptyTitle: "旅行地圖即將展開",
-    travelEmptyDescription: "這個頁面暫時獨立於部落格系統，後續可以存取地圖、地點資料和旅遊記錄服務。"
+    friendsTitle: "",
+    friendsDescription: "",
+    travelTitle: "",
+    travelDescription: "",
+    travelEmptyTitle: "",
+    travelEmptyDescription: ""
   },
   search: {
     label: "搜尋文章",
@@ -126,8 +126,8 @@ export const defaultUi = {
       tags: "Tags",
       browseAllTags: "Browse all tags",
       now: "Now",
-      listening: "Listening",
-      reading: "Reading",
+      listening: "Playing",
+      reading: "Profession",
       working: "Working on"
     },
     article: {
@@ -161,13 +161,13 @@ export const defaultUi = {
       browseArchive: "Browse archive"
     },
     pages: {
-      archiveTitle: "All writing, grouped by year",
-      archiveDescription: "Published posts in the garden.",
-      tagsTitle: "Find notes by topic",
-      tagsDescription: "A soft index for the garden.",
+      archiveTitle: "All posts, grouped by year",
+      archiveDescription: "",
+      tagsTitle: "Find posts by tags",
+      tagsDescription: "",
       taggedDescription: "Posts collected under this tag.",
       seriesTitle: "Read in series",
-      seriesDescription: "Browse connected posts in their intended order.",
+      seriesDescription: "",
       seriesPosts: "posts",
       seriesEmpty: "There are no series posts in this language yet.",
       aboutTitle: "About",

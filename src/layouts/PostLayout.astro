@@ -32,6 +32,22 @@ const hasGalleries = post.body?.includes(":::gallery") ?? false;
 const hasEncryptedBlocks = post.body?.includes(":::encrypted") ?? false;
 const hasMusicPlayers = /::+music(?:\{|\s)/.test(post.body ?? "");
 const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
+const labels = {
+  zh: {
+    partsTitle: "使用零件",
+    paintsTitle: "噴塗記錄",
+    partsHead: ["部位", "來源", "類型", "備註"],
+    paintsHead: ["部位", "品牌 / 色號", "底漆", "陰影", "保護漆", "備註"],
+    xPost: "X 貼文",
+  },
+  en: {
+    partsTitle: "Parts Used",
+    paintsTitle: "Paint Records",
+    partsHead: ["Location", "Source", "Type", "Note"],
+    paintsHead: ["Location", "Brand / Code", "Primer", "Shadow", "Topcoat", "Note"],
+    xPost: "X Post",
+  },
+}[locale];
 ---
 
 <BaseLayout
@@ -65,7 +81,7 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
       {(post.data.xUrl || post.data.hpoiUrl) && (
         <div class="external-links">
           {post.data.xUrl && (
-            <a href={post.data.xUrl} target="_blank" rel="noopener noreferrer">X 貼文</a>
+            <a href={post.data.xUrl} target="_blank" rel="noopener noreferrer">{labels.xPost}</a>
           )}
           {post.data.hpoiUrl && (
             <a href={post.data.hpoiUrl} target="_blank" rel="noopener noreferrer">Hpoi</a>
@@ -75,10 +91,10 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
 
       {post.data.parts.length > 0 && (
         <section class="structured-record">
-          <h2>使用零件</h2>
+          <h2>{labels.partsTitle}</h2>
           <table>
             <thead>
-              <tr><th>部位</th><th>來源</th><th>類型</th><th>備註</th></tr>
+              <tr>{labels.partsHead.map((h) => <th>{h}</th>)}</tr>
             </thead>
             <tbody>
               {post.data.parts.map((p) => (
@@ -96,17 +112,10 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
 
       {post.data.paints.length > 0 && (
         <section class="structured-record">
-          <h2>噴塗記錄</h2>
+          <h2>{labels.paintsTitle}</h2>
           <table>
             <thead>
-              <tr>
-                <th>部位</th>
-                <th>品牌 / 色號</th>
-                <th>底漆</th>
-                <th>陰影</th>
-                <th>保護漆</th>
-                <th>備註</th>
-              </tr>
+              <tr>{labels.paintsHead.map((h) => <th>{h}</th>)}</tr>
             </thead>
             <tbody>
               {post.data.paints.map((p) => (

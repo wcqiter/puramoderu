@@ -1,5 +1,5 @@
 ---
-title: "Plafia 智乃"
+title: "Plafia Chino"
 pubDate: 2026-11-12
 cover:
   src: "https://r2-puramoderu.dennisiter.cc/2026-11-12/__1_f_IMG_4946.jpg"
@@ -7,11 +7,11 @@ cover:
 xUrl: "https://x.com/dennisiter/status/2120860124915118333"
 hpoiUrl: "https://www.hpoi.net/album/415845"
 series: Plafia
-tags: [Plafia, PLUM, 請問你要來點兔子嗎]
+tags: [Plafia, PLUM, Is the order a Rabbit?]
 
 parts:
   - location: ""
-    source: "Plafia 智乃"
+    source: "Plafia Chino"
     type: "原裝"
     note: "13.5cm高"
 

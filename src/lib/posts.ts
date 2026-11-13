@@ -10,9 +10,11 @@ export async function getPublishedPosts(locale?: Locale) {
   const posts = await getCollection("models", ({ data }) => !data.draft);
   assertUniquePostSlugs(posts);
 
-  return posts
-    .filter((post) => !locale || post.data.lang === locale)
-    .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  const sorted = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  if (!locale) return sorted;
+
+  const localized = sorted.filter((post) => post.data.lang === locale);
+  return localized.length > 0 ? localized : sorted;
 }
 
 export async function getPinnedPosts(locale?: Locale) {
