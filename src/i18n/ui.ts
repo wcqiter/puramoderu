@@ -30,7 +30,7 @@ export const defaultUi = {
       now: "興趣",
       listening: "持續遊玩",
       reading: "專業",
-      working: "下一件作品"
+      working: "正在製作"
     },
     article: {
       back: "返回",
@@ -82,14 +82,14 @@ export const defaultUi = {
   },
   search: {
     label: "搜尋文章",
-    placeholder: "Astro、設計、生活...",
+    placeholder: "女神裝置、機娘、GK、3D打印...",
     empty: "輸入關鍵字搜尋標題、摘要及內文。",
     noResults: "暫時沒有符合的文章。",
     ariaOpen: "搜尋"
   },
   footer: {
-    builtWith: "使用 Astro 建構。",
-    runningSince: "本站已經運行了 {time}",
+    builtWith: "使用 Astro 建立。",
+    runningSince: "已運行了 {time}",
     runtimeDays: "{count} 天",
     runtimeHours: "{count} 小時",
     runtimeMinutes: "{count} 分鐘",

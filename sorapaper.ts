@@ -6,7 +6,7 @@ const config = {
     description: "一個機娘模型愛好者的記錄日誌",
     url: "https://puramoderu.dennisiter.cc",
     base: "/",
-    ogImage: "/covers/sky.avg",
+    ogImage: "",
     defaultLocale: "zh",
   },
   author: {
@@ -18,6 +18,7 @@ const config = {
     links: [
       { label: "GitHub", href: "https://github.com/wcqiter" },
       { label: "X", href: "https://x.com/dennisiter" },
+      { label: "Hpoi", href: "https://www.hpoi.net/user/209327" },
       { label: "Email", href: "mailto:dennisiter@gmail.com" }
     ]
   },

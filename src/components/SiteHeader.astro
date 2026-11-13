@@ -20,7 +20,6 @@ const nav = [
   { zh: ui.zh.nav.tags, en: ui.en.nav.tags, href: "/tags/" },
   { zh: ui.zh.nav.series, en: ui.en.nav.series, href: "/series/" },
   { zh: ui.zh.nav.about, en: ui.en.nav.about, href: "/about/" },
-  { zh: ui.zh.nav.friends, en: ui.en.nav.friends, href: "/friends/" },
   ...(themeConfig.featureFlags.travel ? [{ zh: ui.zh.nav.travel, en: ui.en.nav.travel, href: "/travel/" }] : []),
   { zh: "RSS", en: "RSS", href: "/rss.xml" }
 ];
@@ -56,11 +55,6 @@ const nav = [
         <path d="m16.7 16.7 3.3 3.3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/>
         <circle cx="10.9" cy="10.9" r="6.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
         <path d="M8.35 9.45c.55-1.05 1.52-1.7 2.72-1.82" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"/>
-      </svg>
-    </button>
-    <button class="language" type="button" aria-label="Switch language" data-locale-toggle data-alternate-path={alternatePath ?? ""}>
-      <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" aria-hidden="true">
-        <path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
       </svg>
     </button>
     <ThemeToggle />
