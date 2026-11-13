@@ -60,7 +60,7 @@ export const defaultUi = {
         "cc-by-nc-4.0": "知識共享署名—非商業性使用 4.0 國際授權協議"
       },
       copyright: "使用 SoraPaper 寫作。轉載時請保留原文連結。",
-      browseArchive: "瀏覽歸檔"
+      browseArchive: "瀏覽所有文章"
     },
    pages: {
     archiveTitle: "以年份瀏覽所有文章",

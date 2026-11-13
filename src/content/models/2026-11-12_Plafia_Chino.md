@@ -7,7 +7,7 @@ cover:
 xUrl: "https://x.com/dennisiter/status/2120860124915118333"
 hpoiUrl: "https://www.hpoi.net/album/415845"
 series: Plafia
-tags: [IstheOrderaRabbit]
+tags: [Plafia, PLUM, 請問你要來點兔子嗎]
 
 parts:
   - location: ""
