@@ -6,27 +6,27 @@ import type { UiConfig } from "@/config/types";
 export const defaultUi = {
   zh: {
     nav: {
-      home: "首页",
-      archive: "归档",
-      tags: "标签",
+     home: "首頁",
+      archive: "製作記錄",
+      tags: "主題",
       series: "系列",
-      about: "关于",
-      friends: "友链",
-      travel: "游记"
+      about: "關於",
+      friends: "友情鏈接",
+      travel: "遊記"
     },
     hero: {
-      eyebrow: "欢迎来到我的空间",
-      title: "你好，我写前端、设计与生活",
-      description: "一个记录想法、实验和日常的小花园。持续构建，持续学习，也持续写作。",
-      chips: ["Astro", "前端", "笔记"]
+      eyebrow: "歡迎來到我的日誌",
+      title: "一個機娘模型愛好者的記錄日誌",
+      description: "享受DIY的樂趣",
+      chips: []
     },
     home: {
       latestPosts: "最新文章",
       viewAll: "查看全部"
     },
     sidebar: {
-      tags: "标签",
-      browseAllTags: "浏览所有标签",
+      tags: "主題",
+      browseAllTags: "瀏覽所有主題",
       now: "興趣",
       listening: "持續遊玩",
       reading: "專業",
@@ -34,89 +34,89 @@ export const defaultUi = {
     },
     article: {
       back: "返回",
-      updated: "更新于",
+      updated: "更新於",
       share: "分享",
-      shareDescription: "复制链接、下载分享图，或分享到常用平台。",
-      copyLink: "复制链接",
-      copied: "已复制",
-      nativeShare: "系统分享",
-      downloadSvg: "下载 SVG",
-      downloadPng: "下载 PNG",
+      shareDescription: "複製連結、下載分享圖，或分享到常用平台。",
+      copyLink: "複製連結",
+      copied: "已複製",
+      nativeShare: "系統分享",
+      downloadSvg: "下載 SVG",
+      downloadPng: "下載 PNG",
       shareToX: "分享到 X",
       shareToWeibo: "分享到微博",
       shareToTelegram: "分享到 Telegram",
       wechat: "微信",
-      wechatHint: "微信扫码打开文章后，可继续转发给朋友或朋友圈。",
-      translationUnavailable: "当前文章暂无对应译文，语言切换会保留在当前页面。",
-      postNavigation: "相邻文章",
+      wechatHint: "微信掃碼開啟文章後，可繼續轉寄給朋友或朋友圈。",
+      translationUnavailable: "目前文章暫無對應譯文，語言切換會保留在目前頁面。",
+      postNavigation: "鄰近文章",
       previousPost: "上一篇",
       nextPost: "下一篇",
       seriesLabel: "文章系列",
       seriesProgress: "第 {current} 篇，共 {total} 篇",
-      licenseLabel: "许可协议",
-      licenseDescription: "本文采用 {license} 进行许可。",
+      licenseLabel: "授權協議",
+      licenseDescription: "本文採用 {license} 授權。",
       licenses: {
-        "cc-by-4.0": "知识共享署名 4.0 国际许可协议",
-        "cc-by-nc-4.0": "知识共享署名—非商业性使用 4.0 国际许可协议"
+        "cc-by-4.0": "知識共享署名 4.0 國際授權協議",
+        "cc-by-nc-4.0": "知識共享署名—非商業性使用 4.0 國際授權協議"
       },
-      copyright: "使用 SoraPaper 写作。转载时请保留原文链接。",
-      browseArchive: "浏览归档"
+      copyright: "使用 SoraPaper 寫作。轉載時請保留原文連結。",
+      browseArchive: "瀏覽歸檔"
     },
-    pages: {
-      archiveTitle: "按年份归档所有文章",
-      archiveDescription: "花园中已发布的文章。",
-      tagsTitle: "按主题寻找笔记",
-      tagsDescription: "柔和的内容索引。",
-      taggedDescription: "这个标签下收录的文章。",
-      seriesTitle: "按系列连续阅读",
-      seriesDescription: "有顺序地浏览相互关联的文章。",
-      seriesPosts: "篇文章",
-      seriesEmpty: "这个语言下还没有系列文章。",
-      aboutTitle: "关于",
-      friendsTitle: "网络花园里的邻居",
-      friendsDescription: "一些值得访问的链接。",
-      travelTitle: "游记",
-      travelDescription: "未来会在这里记录旅行路线、城市印象和地图足迹。",
-      travelEmptyTitle: "旅行地图即将展开",
-      travelEmptyDescription: "这个页面暂时独立于博客系统，后续可以接入地图、地点数据和旅行记录服务。"
-    },
-    search: {
-      label: "搜索文章",
-      placeholder: "Astro、设计、生活...",
-      empty: "输入关键词搜索标题、摘要和正文。",
-      noResults: "暂时没有匹配的文章。",
-      ariaOpen: "搜索"
-    },
-    footer: {
-      builtWith: "使用 Astro 构建。",
-      runningSince: "本站已经运行了 {time}",
-      runtimeDays: "{count} 天",
-      runtimeHours: "{count} 小时",
-      runtimeMinutes: "{count} 分钟",
-      runtimeSeconds: "{count} 秒"
-    },
-    mermaid: {
-      dialog: "Mermaid 图表预览",
-      open: "点击放大图表",
-      close: "关闭图表预览"
-    },
-    readingTime: "{minutes} 分钟阅读"
+   pages: {
+    archiveTitle: "以年份瀏覽所有文章",
+    archiveDescription: "已發布的文章。",
+    tagsTitle: "按主題找筆記",
+    tagsDescription: "柔和的內容索引。",
+    taggedDescription: "這個標籤下收錄的文章。",
+    seriesTitle: "按系列連續閱讀",
+    seriesDescription: "有順序地瀏覽相互關聯的文章。",
+    seriesPosts: "篇文章",
+    seriesEmpty: "這個語言下還沒有系列文章。",
+    aboutTitle: "關於",
+    friendsTitle: "網路花園裡的鄰居",
+    friendsDescription: "一些值得訪問的連結。",
+    travelTitle: "遊記",
+    travelDescription: "未來會在這裡記錄旅行路線、城市印象和地圖足跡。",
+    travelEmptyTitle: "旅行地圖即將展開",
+    travelEmptyDescription: "這個頁面暫時獨立於部落格系統，後續可以存取地圖、地點資料和旅遊記錄服務。"
+  },
+  search: {
+    label: "搜尋文章",
+    placeholder: "Astro、設計、生活...",
+    empty: "輸入關鍵字搜尋標題、摘要及內文。",
+    noResults: "暫時沒有符合的文章。",
+    ariaOpen: "搜尋"
+  },
+  footer: {
+    builtWith: "使用 Astro 建構。",
+    runningSince: "本站已經運行了 {time}",
+    runtimeDays: "{count} 天",
+    runtimeHours: "{count} 小時",
+    runtimeMinutes: "{count} 分鐘",
+    runtimeSeconds: "{count} 秒"
+  },
+  mermaid: {
+    dialog: "Mermaid 圖表預覽",
+    open: "點擊放大圖表",
+    close: "關閉圖表預覽"
+  },
+    readingTime: "{minutes} 分鐘閱讀"
   },
   en: {
     nav: {
       home: "Home",
-      archive: "Archive",
+      archive: "Moderling Records",
       tags: "Tags",
       series: "Series",
       about: "About",
-      friends: "Friends",
+      friends: "Friends Sites",
       travel: "Travel"
     },
     hero: {
       eyebrow: "Welcome to my space",
-      title: "Hi, I write about frontend, design and life",
-      description: "A digital garden of thoughts, experiments and little by little. Building in public, learning out loud.",
-      chips: ["Astro", "Frontend", "Notes"]
+      title: "A record blog of a plastic model maker",
+      description: "Enjoy the fun of DIY",
+      chips: []
     },
     home: {
       latestPosts: "Latest Posts",

@@ -90,8 +90,8 @@ const config = {
       },
       hero: {
         eyebrow: "Welcome to my space",
-        title: "Enjoy the fun of DIY",
-        description: "A record blog of a plastic model maker",
+        title: "A record blog of a plastic model maker",
+        description: "Enjoy the fun of DIY",
         chips: []
       },
       article: {
