@@ -9,10 +9,9 @@ import { withBase } from "@/lib/paths";
 interface Props {
   locale: Locale;
   currentPath: string;
-  alternatePath?: string;
 }
 
-const { locale, currentPath, alternatePath } = Astro.props;
+const { locale, currentPath } = Astro.props;
 const t = getUi(locale);
 const nav = [
   { zh: ui.zh.nav.home, en: ui.en.nav.home, href: "/" },
@@ -81,11 +80,6 @@ const nav = [
     document.documentElement.dataset.locale = next;
     document.documentElement.lang = next;
     document.dispatchEvent(new CustomEvent("sorapaper:locale-change", { detail: { locale: next } }));
-
-    const alternatePath = localeButton.getAttribute("data-alternate-path");
-    if (alternatePath && alternatePath !== currentPath) {
-      window.location.href = alternatePath;
-    }
   });
 </script>
 

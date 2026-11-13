@@ -271,9 +271,12 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
   });
 
   function setupGalleryLightbox() {
-    let dialog = document.querySelector("[data-gallery-lightbox]");
+    const existing = document.querySelector("[data-gallery-lightbox]");
+    let dialog: HTMLDialogElement;
 
-    if (!(dialog instanceof HTMLDialogElement)) {
+    if (existing instanceof HTMLDialogElement) {
+      dialog = existing;
+    } else {
       dialog = document.createElement("dialog");
       dialog.setAttribute("data-gallery-lightbox", "true");
       dialog.className = "gallery-lightbox";
@@ -285,7 +288,6 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
       });
     }
 
-    // 到這裡 dialog 的型別已是 HTMLDialogElement
     if (dialog.dataset.lightboxBound === "true") return;
     dialog.dataset.lightboxBound = "true";
 
