@@ -6,14 +6,14 @@ const config = {
     description: "一個機娘模型愛好者的記錄日誌",
     url: "https://puramoderu.dennisiter.cc",
     base: "/",
-    ogImage: "/covers/sky.svg",
+    ogImage: "/covers/sky.avg",
     defaultLocale: "zh",
   },
   author: {
     name: "天虹",
     title: "機娘模型愛好者",
     bio: "程序員、模型愛好者、3D打印愛好者、米哈遊玩家",
-    avatar: "/avatar.svg",
+    avatar: "/profile.jpg",
     location: "香港",
     links: [
       { label: "GitHub", href: "https://github.com/wcqiter" },
@@ -22,9 +22,9 @@ const config = {
     ]
   },
   now: {
-    listening: "miwa - ヒカリヘ",
-    reading: "The Design of Everyday Things",
-    working: "A new project"
+    listening: "米哈遊遊戲[原神、崩壞：星穹鐵道、絕區零、崩壞3]、少女前線2：追放、明日方舟：終末地、碧藍航線",
+    reading: "網頁全端、雲端、架構",
+    working: "异世界旅行手帐03 新手铁匠 海莉·史密斯"
   },
   featureFlags: {
     travel: false
@@ -37,7 +37,7 @@ const config = {
     license: "cc-by-4.0"
   },
   footer: {
-    startedAt: "2026-07-16T00:00:00+08:00",
+    startedAt: "2026-11-13T10:00:00+08:00",
     // Fill these after the corresponding registrations are approved.
     icp: {
       number: ""
@@ -62,8 +62,8 @@ const config = {
       },
       hero: {
         eyebrow: "歡迎來到我的日誌",
-        title: "享受DIY的樂趣",
-        description: "一個機娘模型愛好者的記錄日誌",
+        title: "一個機娘模型愛好者的記錄日誌",
+        description: "享受DIY的樂趣",
         chips: []
       },
       article: {

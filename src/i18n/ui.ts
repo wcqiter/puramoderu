@@ -27,10 +27,10 @@ export const defaultUi = {
     sidebar: {
       tags: "标签",
       browseAllTags: "浏览所有标签",
-      now: "Now",
-      listening: "正在听",
-      reading: "正在读",
-      working: "正在做"
+      now: "興趣",
+      listening: "持續遊玩",
+      reading: "專業",
+      working: "下一件作品"
     },
     article: {
       back: "返回",
