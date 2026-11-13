@@ -6,9 +6,11 @@ cover:
   alt: "Plafia 智乃"
 xUrl: "https://x.com/dennisiter/status/2120860124915118333"
 hpoiUrl: "https://www.hpoi.net/album/415845"
+series: Plafia
+tags: [IstheOrderaRabbit]
 
 parts:
-  - location: "/"
+  - location: ""
     source: "Plafia 智乃"
     type: "原裝"
     note: "13.5cm高"
@@ -18,7 +20,7 @@ paints:
     brand: "郡士"
     code: "CL01"
     name: "White Peach"
-    base: "-"
+    base: ""
     shadow: "CL03 Clear Pale Red"
     topcoat: "JW012 消光"
     note: "陰影後使用 CL01 覆蓋"
@@ -41,9 +43,17 @@ paints:
     brand: "匠域"
     code: "JWMC24"
     name: "鈷藍"
-    base: "-"
-    shadow: "-"
+    base: ""
+    shadow: ""
     topcoat: "JW011 半光澤"
+    note: ""
+  - location: "頭髮"
+    brand: "匠域"
+    code: "JWMC72 + JW041"
+    name: "薄群青 + 超級白 混合"
+    base: "白色補土"
+    shadow: "頭頂漸變白色"
+    topcoat: "JW012 消光"
     note: ""
 ---
 
