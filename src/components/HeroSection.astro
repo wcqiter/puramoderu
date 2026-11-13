@@ -19,11 +19,6 @@ const t = getUi(locale);
       {t.hero.chips.map((chip) => <span class="pill">{chip}</span>)}
     </div>
   </div>
-  <div class="art glass" aria-hidden="true">
-    <div class="moon"></div>
-    <span class="star s1">✦</span>
-    <span class="star s2">✧</span>
-  </div>
 </section>
 
 <style>
@@ -32,7 +27,7 @@ const t = getUi(locale);
     grid-template-columns: minmax(0, 1fr) var(--home-aside, clamp(15rem, 24vw, 19.5rem));
     align-items: center;
     gap: var(--home-gap, clamp(1rem, 1.6vw, 1.4rem));
-    padding: clamp(3.2rem, 8vw, 6.2rem) 0 2rem;
+    padding: clamp(3.2rem, 8vw, 3.2rem) 0 2rem;
   }
 
   .copy {
@@ -42,10 +37,9 @@ const t = getUi(locale);
   }
 
   h1 {
-    max-width: 780px;
     margin: 0;
     font-family: var(--font-serif);
-    font-size: clamp(3rem, 8vw, 5.8rem);
+    font-size: clamp(3rem, 1vw, 5.8rem);
     font-weight: 700;
     letter-spacing: -0.07em;
     line-height: 0.98;
