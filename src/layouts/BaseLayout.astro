@@ -26,7 +26,6 @@ interface Props {
   title?: string;
   description?: string;
   locale?: Locale;
-  alternatePath?: string;
   seo?: SeoConfig;
 }
 
@@ -34,7 +33,6 @@ const {
   title = themeConfig.name,
   description = themeConfig.description,
   locale = defaultLocale,
-  alternatePath,
   seo = {}
 } = Astro.props;
 
