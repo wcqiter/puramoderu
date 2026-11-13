@@ -17,7 +17,6 @@ import { getUi } from "@/i18n/ui";
 interface Props {
   post: BlogPost;
   locale: Locale;
-  alternatePath?: string;
   alternates?: Partial<Record<Locale, string>>;
   previousPost?: BlogPost;
   nextPost?: BlogPost;
@@ -26,7 +25,7 @@ interface Props {
   Content: any;
 }
 
-const { post, locale, alternatePath, alternates, previousPost, nextPost, seriesPosts = [], headings, Content } = Astro.props;
+const { post, locale, alternates, previousPost, nextPost, seriesPosts = [], headings, Content } = Astro.props;
 const t = getUi(locale);
 const hasMermaid = post.body?.includes(":::mermaid") ?? false;
 const hasGalleries = post.body?.includes(":::gallery") ?? false;
@@ -39,7 +38,6 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
   title={post.data.title}
   description={post.data.description}
   locale={locale}
-  alternatePath={alternatePath}
   seo={{
     type: "article",
     canonicalPath: getPostHref(post),
@@ -52,11 +50,9 @@ const ogImage = post.data.ogImage ?? getPostOgImagePngHref(post);
     }
   }}
 >
-  {!alternatePath && (
-    <div class="translation-toast" role="status" aria-live="polite" data-translation-toast data-post-locale={post.data.lang}>
-      {t.article.translationUnavailable}
-    </div>
-  )}
+  <div class="translation-toast" role="status" aria-live="polite" data-translation-toast data-post-locale={post.data.lang}>
+    {t.article.translationUnavailable}
+  </div>
   <article class="container" data-pagefind-body data-pagefind-filter={`lang:${post.data.lang}`}>
     <ArticleHeader post={post} locale={locale}>
       <PostShare post={post} locale={locale} />
