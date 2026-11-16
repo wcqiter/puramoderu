@@ -82,7 +82,7 @@ export const defaultUi = {
   },
   search: {
     label: "搜尋文章",
-    placeholder: "女神裝置、機娘、GK、3D打印...",
+    placeholder: "MEGAMI DEVICE, Frame Arms Girl, ARCANADEA, Plamax, GK, 3D Print...",
     empty: "輸入關鍵字搜尋標題、摘要及內文。",
     noResults: "暫時沒有符合的文章。",
     ariaOpen: "搜尋"
