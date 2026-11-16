@@ -6,8 +6,8 @@ cover:
   alt: "STYLET Swimsuit Ver. with NIGHT CZAR"
 xUrl: "https://x.com/dennisiter/status/2081732922533654667"
 hpoiUrl: "https://www.hpoi.net/album/394067"
-series: Frame Arms Girls
-tags: [Frame Arms Girls, Kotobukiya, 無限邂逅, M.S.G]
+series: Frame Arms Girl
+tags: [Frame Arms Girl, Kotobukiya, 無限邂逅, M.S.G]
 
 parts:
   - location: "本體"
