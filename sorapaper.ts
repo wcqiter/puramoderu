@@ -25,7 +25,7 @@ const config = {
   now: {
     listening: "米哈遊遊戲[原神、崩壞：星穹鐵道、絕區零、崩壞3]、少女前線2：追放、明日方舟：終末地、碧藍航線",
     reading: "網頁全端、雲端、架構、網絡安全、程式語言",
-    working: "異世界旅行手帳 03 新人鍛冶師 ヘーリー・スミス "
+    working: "PLAMATEA 初音未來 中央町戰術工藝Ver."
   },
   featureFlags: {
     travel: false
