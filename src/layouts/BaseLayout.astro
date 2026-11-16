@@ -105,6 +105,11 @@ function getHrefLang(value: Locale) {
       document.documentElement.lang = locale;
       localStorage.setItem("locale", locale);
     </script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script is:inline type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "66444061982b4642a0057ce73da981c0"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
   </head>
   <body>
     <ScrollProgress />
