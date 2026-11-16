@@ -9,11 +9,7 @@ hpoiUrl: "https://www.hpoi.net/album/396256"
 series: Reincarnation
 tags: [Reincarnation, 艦これ]
 
-parts:
-  - location: ""
-    source: "Reincarnation 島風"
-    type: "原裝"
-    note: ""
+parts: []
 
 paints:
   - location: "膚色"

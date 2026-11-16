@@ -9,11 +9,7 @@ hpoiUrl: "https://www.hpoi.net/album/415845"
 series: Plafia
 tags: [Plafia, PLUM, Is the order a Rabbit?]
 
-parts:
-  - location: ""
-    source: "Plafia Chino"
-    type: "原裝"
-    note: "13.5cm高"
+parts: []
 
 paints:
   - location: "膚色"

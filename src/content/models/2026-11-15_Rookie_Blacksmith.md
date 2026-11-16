@@ -9,11 +9,7 @@ hpoiUrl: "https://www.hpoi.net/album/416446"
 series: 異世界旅行手帳
 tags: [異世界旅行手帳, PR-Production]
 
-parts:
-  - location: ""
-    source: "異世界旅行手帳 03 新人鍛冶師 ヘーリー・スミス"
-    type: "原裝"
-    note: ""
+parts: []
 
 paints:
   - location: "膚色"
