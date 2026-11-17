@@ -1,5 +1,5 @@
 ---
-title: "Rookie Blacksmith Hayley Smith"
+title: "異世界旅行手帳 03 新人鍛冶師 ヘーリー・スミス"
 pubDate: 2026-11-15
 cover:
   src: "https://r2-puramoderu.dennisiter.cc/2026-11-15/1.jpg"
